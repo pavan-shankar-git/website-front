@@ -1,0 +1,244 @@
+.dashboard-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dashboard-search-input,
+.batch-dropdown {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.dashboard-search-icon {
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.selected-patient {
+    margin-left: 16px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.search-results {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 100;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* 
+.search-result-item {
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+} */
+
+/* 🔥 Hover Effect */
+.search-result-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* ✅ Green - Report Submitted */
+.search-result-item.green {
+    color: green;
+}
+
+/* 🟠 Orange - All PDFs uploaded but no report */
+.search-result-item.orange {
+    color: orange;
+}
+
+/* ❌ Red - Missing PDFs */
+.search-result-item.red {
+    color: red;
+}
+
+.availability-buttons {
+    display: flex;
+    gap: 6px; /* Adds spacing between buttons */
+    margin-left: 10px;
+}
+
+.availability-buttons button {
+    font-size: 11px; /* Smaller font for compact look */
+    padding: 5px 10px; /* Compact button size */
+    border-radius: 10px; /* Rounded corners */
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.orange-btn {
+    background-color:black; /* Orange */
+    color: white;
+}
+
+.red-btn {
+    background-color:black; /* Red */
+    color: white;
+}
+
+.availability-buttons button:hover {
+    opacity: 0.8; /* Smooth hover effect */
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #28a745;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(18px);
+  }
+  
+  
+
+
+
+
+
+.search-result-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* ✅ Ensures alignment */
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.switch-container {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* ✅ Increased space between switch & button */
+}
+
+.view-details-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 4px 12px; /* ✅ Slightly increased padding */
+    font-size: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.view-details-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;  /* ✅ Rounded button */
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.view-details-button:hover {
+    background-color: #0056b3;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 18px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 18px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #28a745;
+}
+
+input:checked + .slider:before {
+    transform: translateX(16px);
+}
+.close-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #555;
+}
+
+.close-button:hover {
+  color: red;
+}

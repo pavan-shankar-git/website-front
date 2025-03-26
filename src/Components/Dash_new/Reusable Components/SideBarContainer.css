@@ -1,0 +1,67 @@
+/* Sidebar content container */
+.sidebar-content {
+  display: grid;
+  grid-template-columns: repeat(2, 4fr); /* Two equal columns */
+  gap: 5px; /* Space between boxes */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Sidebar button styles */
+.sidebar-button {
+  background-color: #063767; /* Default dark background */
+  color: white;
+  padding: 6px; /* Adjust padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px; /* Reduce text size */
+  text-align: left;
+  transition: background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 2px; /* Reduce gap between icon & text */
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure equal size for both columns */
+  height: 75px; /* Adjust height */
+  overflow-wrap: break-word;
+  margin: 1px;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Concern Highlighting */
+.sidebar-button.concerned {
+  background-color: orange !important;
+  color: white !important;
+}
+
+/* Selected & Submitted Styles */
+.sidebar-button.selected {
+  background-color: #1abc9c !important;
+}
+
+.sidebar-button.submitted {
+  background-color: #28a745 !important;
+}
+
+.sidebar-button:hover {
+  background-color: #1abc9c !important;
+}
+
+/* Icons inside buttons */
+.condition-icons {
+  height: 28px; /* Reduce icon size */
+  width: 28px;
+  filter: brightness(0) invert(1);
+}
+
+/* Button text */
+.sidebar-button span {
+  font-size: 9px;
+  line-height: 10px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  text-align: center; /* Center the text */
+}
