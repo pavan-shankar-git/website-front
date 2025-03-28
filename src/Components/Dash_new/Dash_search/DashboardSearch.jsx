@@ -86,6 +86,7 @@ const DashboardSearch = ({ onSelectPatient, fetchDataFromAPIs, selectedBatch, se
 
   // ✅ Show all patients when input is focused
   const handleInputFocus = () => {
+    fetchReportStatus();
     if (selectedBatch) {
       setFilteredPatients(batches[selectedBatch] || []);
     }
