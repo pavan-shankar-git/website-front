@@ -55,7 +55,7 @@
 
     {
       "name": "Arrhythmia",
-      "icon": "Icons/CAD icon.png",
+      "icon": "Icons/Arrhythmia Icon.png",
       "subcategories": [
         {
           "name": "Arrhythmia",
@@ -98,10 +98,9 @@
       ]
     },
 
-
     {
       "name": "Cardiomyopathy",
-      "icon": "Icons/CAD icon.png",
+      "icon": "Icons/Cardiomyopathy Iconn.png",
       "subcategories": [
         {
           "name": "Cardiomyopathy",
